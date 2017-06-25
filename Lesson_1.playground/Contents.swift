@@ -13,16 +13,17 @@ let intMax = Int.max
 let conInt = 1
 let conD = 1.8
 let conF : Float = 2.2
-let newConF : Float = Float(conD) + Float(conInt) + conF
+let newConF = Float(conD) + Float(conInt) + conF
 let newConD = Double(conF) + Double(conInt) + conD
-let newConI = Int(conD) + Int(conF) + conInt
+let newConI = Int(conD + Double(conF) + Double(conInt))
 if newConI > Int(newConD)
 {
     print("Integer \(newConI) greater than Double \(newConD)")
-}
+} else if  newConI == Int(newConD)
+{print ("Doble \(newConD) equal Integer \(newConI)")}
 else
 {
-   print("Double \(newConD) greater than Integer \(newConI)")
+    print("Double \(newConD) greater than Integer \(newConI)")
 }
 
 

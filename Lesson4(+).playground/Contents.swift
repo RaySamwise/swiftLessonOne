@@ -1,5 +1,14 @@
-//: Playground - noun: a place where people can play
+//5 string let's'
+//sum of those, some of them are numbers and some of them are letters
 
-import UIKit
+let first :String? = "one"
+let second :Int? = Int("2")
+let third = "third"
+let fourth = "4"
+let fith = "fith"
 
-var str = "Hello, playground"
+
+
+
+
+

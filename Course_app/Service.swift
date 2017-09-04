@@ -33,11 +33,11 @@ class Service {
     
         
         
-        for advice in advices
-    {
-        try JSONSerialization.jsonObject(with: data) as? [[String:Any]]
-        print(advice)
-        }
+   //     for advice in advices
+//    {
+  //      try JSONSerialization.jsonObject(with: data) as? [[String:Any]]
+  //      print(advice)
+ //       }
         return [Advice]()
         
         

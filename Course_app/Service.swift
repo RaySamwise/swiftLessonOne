@@ -29,19 +29,40 @@ class Service {
                 return [Advice]()
                 
         }
-        //print(data)
-    
+        print(data)
         
         
-   //     for advice in advices
-//    {
-  //      try JSONSerialization.jsonObject(with: data) as? [[String:Any]]
-  //      print(advice)
- //       }
+        
+        
+        if  let rawJs =  try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+        {
+            
+            for var partRawJs in rawJs!
+            {
+                let id = partRawJs["id"] as? Int
+                let text = partRawJs["text"] as? String
+                let stat = partRawJs["stat"] as? Int
+                let sound = partRawJs["sound"] as? String
+                
+                if let idObj = id, let textObj = text, let statObj = stat, let soundObj = sound
+                {
+                    var newId = idObj as Int
+                    var newText = textObj as String
+                    var newStat = statObj as Int
+                    var newSound = soundObj as String
+                    
+                    print(newId,newText,newStat,newSound)
+                }
+                //    var textNew = ""
+                
+                //    if let newO = partRawJs["text"] as? String
+                //    {
+                //      textNew = newO
+                //     print(textNew) }
+                
+                
+            }
+        }
         return [Advice]()
-        
-        
     }
-    
-    
 }

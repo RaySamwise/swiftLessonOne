@@ -65,9 +65,9 @@ class Service {
     }
     func randomSovet() -> String
     {
-        let randomIndex = Int(arc4random_uniform(UInt32(self.advices.count)))
-        print(self.advices.count)
-        let randomSovet = self.advices[randomIndex].text
+        let randomIndex = Int(arc4random_uniform(UInt32(advices.count)))
+        print(advices.count)
+        let randomSovet = advices[randomIndex].text
         return randomSovet
         
     }

@@ -39,7 +39,7 @@ class Service {
             var newArr = [Advice]()
             for var partRawJs in rawJs!
             {
-                let id = Int((partRawJs["id"] as? String)!)
+                let id = Int((partRawJs["identifier"] as? String)!)
                 let text = partRawJs["text"] as? String
                 let stat = Int((partRawJs["stat"] as? String)!)
                 let sound = partRawJs["sound"] as? String
